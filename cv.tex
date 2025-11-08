@@ -1,0 +1,106 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+
+\usepackage{tabularx} % Add this to your preamble
+\usepackage{calc}     % Helps with spacing calculations
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\geometry{left=0.6in, right=0.6in, top=0.6in, bottom=0.6in} 
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{noitemsep, topsep=4pt, leftmargin=*}
+\setlength{\parskip}{1.5pt}
+
+\setstretch{1.0}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\bfseries Badiea Al Shabili}
+    \vspace{6pt}
+    
+    \faIcon{map-marker-alt} Cyberjaya, Selangor 
+    $\cdot$ 
+    \faIcon{phone} +60 11 6932 8361 
+    $\cdot$ 
+    \faIcon{envelope} \href{mailto:badiaalshabili@gmail.com}{badiaalshabili@gmail.com} \\
+    \faIcon{github} \href{https://github.com/AlShabiliBadia}{github.com/AlShabiliBadia}
+    $\cdot$
+    \faIcon{globe} Languages: Arabic (Native), English (Fluent)
+\end{center}
+
+\section*{Summary}
+QA automation engineer passionate about building efficient, scalable, and maintainable testing systems. Skilled in Python, Pytest, and Playwright, with hands-on experience optimizing UI and API test frameworks and integrating CI/CD pipelines. I enjoy improving reliability and developer productivity through automation, data-driven testing, and clean design. Strong foundation in backend development and modern QA practices, with a track record of enhancing test coverage and execution speed.
+
+\section*{Experience}
+
+\subsection*{QA Automation Intern \hfill August 2025 – Present}
+\textit{12u12 Sdn Bhd - Cyberjaya, Selangor}
+\begin{itemize}[itemsep=2pt]
+    \item Built and maintained nearly 1,000 automated UI tests and debugged 400+ legacy scripts, improving stability by 95\% while mentoring a new intern to accelerate onboarding.
+    \item Re-architected the test suite from plain Python to a Pytest-based, parameterized framework, reducing duplication by 50\% and enabling large-scale scenario coverage.
+    \item Optimized test execution from 3–4 minutes to 4–6 seconds per case through caching and modular data design.
+    \item Developed a Gemini-powered AI data extraction tool to automate nutritional data collection and schema validation.
+\end{itemize}
+
+\vspace{4pt}
+
+\subsection*{Web Development Intern \hfill March 2022 – June 2022}
+\textit{ICT Center - Kajang, Selangor}
+\begin{itemize}[itemsep=2pt]
+    \item Developed a full-stack IP management web application from scratch using the Laravel framework.
+    \item Engineered the backend, implementing all CRUD functionalities and managing the database schema for IP records.
+    \item Built the dynamic user interface, creating pages for users to submit, view, and search IP asset data.
+\end{itemize}
+
+\section*{Education}
+
+\subsection*{Bachelor of Computer Science (Hons.) \hfill 2022 - 2025}
+\textit{Multimedia University - Cyberjaya, Selangor \hfill CGPA: 3.2/4.0}
+
+\vspace{4pt}
+
+\subsection*{Diploma in Software Engineering \hfill 2020 – 2022}
+\textit{Infrastructure University Kuala Lumpur - Kajang, Selangor}
+
+\section*{Technical Skills}
+
+\renewcommand{\arraystretch}{1.2} 
+\noindent
+\begin{tabularx}{\linewidth}{@{} l >{\raggedright\arraybackslash}X @{}}
+    \textbf{Languages} & Python, SQL(MySQL, SQLite, PostgreSQL)\\
+    \textbf{Test Automation Frameworks} & Playwright, Selenium, Appium, Pytest, Locust\\
+    \textbf{QA Methodologies} & Test Design, API Testing, Regression/Integration/UAT\\
+    \textbf{Backend \& Core} & FastAPI, REST APIs, Data Structures, Algorithms, OOP \\
+    \textbf{Developer Tools \& CI/CD} & Docker, Git, GitHub, Postman, GitHub Actions\\
+    \textbf{Familiar With} & JavaScript, Java, PHP, Kotlin, Django, Laravel \\
+\end{tabularx}
+
+\section*{Certifications}
+\begin{itemize}[itemsep=2pt]
+    \item MIT 6.00.1x: Introduction to Computer Science and Programming Using Python
+    \item MIT 6.00.2x: Introduction to Computational Thinking and Data Science
+    \item CCNAv7: Introduction to Networks
+\end{itemize}
+
+\end{document}
