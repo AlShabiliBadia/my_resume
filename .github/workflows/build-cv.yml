@@ -19,15 +19,17 @@ jobs:
         with:
           root_file: cv.tex
 
+      - name: Prepare deployment files
+        run: |
+          mkdir public
+          mv cv.pdf public/
+          mv index.html public/
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           force_orphan: true
-
+          publish_dir: ./public
           cname: resume.alshabili.site
-          
-          include: |
-            index.html
-            cv.pdf
