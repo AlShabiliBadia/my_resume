@@ -7,8 +7,8 @@
 \usepackage{fontawesome5}
 \usepackage{titlesec}
 
-\usepackage{tabularx} % Add this to your preamble
-\usepackage{calc}     % Helps with spacing calculations
+\usepackage{tabularx}
+\usepackage{calc}
 
 \hypersetup{
     colorlinks=true,
@@ -17,7 +17,7 @@
     citecolor=blue
 }
 
-\geometry{left=0.6in, right=0.6in, top=0.6in, bottom=0.6in} 
+\geometry{left=0.6in, right=0.6in, top=0.6in, bottom=0.6in}
 
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
@@ -35,19 +35,20 @@
 
 \begin{document}
 
-\begin{center}
-    {\Huge\bfseries Badiea Al Shabili}
-    \vspace{6pt}
-    
-    \faIcon{map-marker-alt} Cyberjaya, Selangor 
-    $\cdot$ 
-    \faIcon{phone} +60 11 6932 8361 
-    $\cdot$ 
-    \faIcon{envelope} \href{mailto:badiaalshabili@gmail.com}{badiaalshabili@gmail.com} \\
-    \faIcon{github} \href{https://github.com/AlShabiliBadia}{github.com/AlShabiliBadia}
-    $\cdot$
-    \faIcon{globe} Languages: Arabic (Native), English (Fluent)
-\end{center}
+\setlength{\tabcolsep}{0pt}
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+    {\Huge\bfseries Badiea Al Shabili} &
+    \begin{tabular}[c]{r @{\hskip 6pt} l}
+        \faIcon{map-marker-alt} & Cyberjaya, Selangor \\
+        \faIcon{phone} & +60 11 6932 8361 \\
+        \faIcon{envelope} & \href{mailto:badiaalshabili@gmail.com}{badiaalshabili@gmail.com} \\
+        \faIcon{github} & \href{https://github.com/AlShabiliBadia}{github.com/AlShabiliBadia} \\
+        \faIcon{globe} & \href{https://alshabili.site/}{alshabili.site} 
+    \end{tabular}
+\end{tabular*}
+\vspace{6pt}
+
+
 
 \section*{Summary}
 QA automation engineer passionate about building efficient, scalable, and maintainable testing systems. Skilled in Python, Pytest, and Playwright, with hands-on experience optimizing UI and API test frameworks and integrating CI/CD pipelines. I enjoy improving reliability and developer productivity through automation, data-driven testing, and clean design. Strong foundation in backend development and modern QA practices, with a track record of enhancing test coverage and execution speed.
